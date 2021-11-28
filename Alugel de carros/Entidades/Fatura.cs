@@ -7,8 +7,11 @@ namespace Alugel_de_carros.Entidades
 {
     class Fatura
     {
+        //Criando a variável de pagamento e encapsulando ela
         public double Pagamento { get; set; }
+        //Criando a variável de taxa e encapsulando ela
         public double Taxa { get; set; }
+        //Criando o construtor Fatura e igualando sua variaveis com seus parametros
         public Fatura(double aluguel, double taxa)
         {
             Pagamento = aluguel;
