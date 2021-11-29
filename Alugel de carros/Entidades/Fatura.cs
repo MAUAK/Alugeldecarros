@@ -17,10 +17,13 @@ namespace Alugel_de_carros.Entidades
             Pagamento = aluguel;
             Taxa = taxa;
         }
+        //Criando a variável de pagamento total 
         public double totalPagamento
         {
+            //Definindo um valor para ela como formula
             get { return Pagamento + Taxa; }
         }
+        //Criando o método de escrever as informações corretamente
         public override string ToString()
         {
             return "Pagamento: "
